@@ -3,7 +3,7 @@ entries:
   test-chart:
   - apiVersion: v2
     appVersion: "2.0"
-    created: "2025-12-16T17:53:16.329392718Z"
+    created: "2025-12-16T18:24:28.159258312Z"
     description: A demo Helm chart for testing the release process
     digest: be446cbee875b70af96a4c30c583398a82ccbf46a19c455ead367a7e65c1536d
     name: test-chart
@@ -11,4 +11,19 @@ entries:
     urls:
     - test-chart-1.0.1.tgz
     version: 1.0.1
-generated: "2025-12-16T17:53:16.329188246Z"
+  test-deps:
+  - apiVersion: v2
+    created: "2025-12-16T18:24:28.160585209Z"
+    dependencies:
+    - condition: cvmfs.enabled
+      name: galaxy-cvmfs-csi
+      repository: https://cloudve.github.io/helm-charts
+      version: 2.5.1
+    description: A demo dependencies Helm chart for testing the release process
+    digest: ff1c13028c6b5bce51e21025a5156a11602525e53063bde3e5e385e427f0af63
+    name: test-deps
+    type: application
+    urls:
+    - test-deps-1.1.0.tgz
+    version: 1.1.0
+generated: "2025-12-16T18:24:28.159021965Z"
